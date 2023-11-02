@@ -1,3 +1,6 @@
+import 'package:clone/view/expantiontail.dart';
+import 'package:clone/view/home_screen.dart';
+import 'package:clone/view/snackbutton.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -10,12 +13,7 @@ class clone extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("clone"),
-        ),
-        body: Center(child: ElevatedButton(onPressed: (){}, child:Text("Press"))),
-      ),
+      home: Tile()
     );
   }
 }
